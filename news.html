@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rafa Braking News</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --primary: #111;
+      --accent: #c29d5b;
+      --background: #f9f9f9;
+      --text: #333;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--primary);
+      padding: 20px 40px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      color: var(--accent);
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      background: url('img/politik.jpg') no-repeat center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .article {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .article:hover {
+      transform: translateY(-5px);
+    }
+
+    .article img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .article-content {
+      padding: 20px;
+    }
+
+    .article-content h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      font-family: 'Playfair Display', serif;
+      color: var(--primary);
+    }
+
+    .article-content p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rafa Braking News</h1>
+    <nav>
+      <a href="#">Beranda</a>
+      <a href="#">Nasional</a>
+      <a href="#">Internasional</a>
+      <a href="#">Bisnis</a>
+      <a href="#">Teknologi</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Update Berita Terbaru Hari Ini</h2>
+      <p>Dapatkan informasi terpercaya, cepat, dan eksklusif hanya di RBC.</p>
+    </div>
+  </section>
+
+  <section class="articles">
+    <div class="article">
+      <img src="a.jpeg" alt="Berita Politik">
+      <div class="article-content">
+        <h3>Judul Berita Politik Hari Ini</h3>
+        <p>Berikut rangkuman Berita Politik Hari Ini – 11 Juni 2025:
+
+🇮🇩 Isu Nangkas dari Dunia Politik dalam Negeri:
+1. Prabowo Subianto: Belanda “Curi” Rp 504.000 Triliun
+Menteri Pertahanan yang juga Menteri Pertahanan, Prabowo Subianto, menuduh Belanda telah mengeksploitasi kekayaan Indonesia senilai Rp 504.000 triliun selama era penjajahan 
+tempo.co
++1
+tempo.co
++1
+antaranews.com
++2
+rmol.id
++2
+rmol.id
++2
+.
+
+2. Prabowo Tegaskan Negara Siap Berperang jika Diperlukan
+Di acara pembukaan Indo Defence 2025, Prabowo menyatakan bahwa Indonesia lebih baik mati daripada dijajah kembali. Meskipun perang bukan pilihan utama, negara ini siap menghadapi berbagai skenario untuk menjaga kedaulatan 
+liputan6.com
++2
+rmol.id
++2
+antaranews.com
++2
+.
+
+3. DPR Pertimbangkan Pansus Evaluasi Penyelenggaraan Haji 2025
+Menanggapi berbagai keluhan dari jemaah haji—terkait pelayanan, katering, dan transportasi—DPR membuka kemungkinan membentuk Panitia Khusus (Pansus) untuk mengevaluasi penyelenggaraan haji tahun ini 
+liputan6.com
++2
+lingkar.co
++2
+tempo.co
++2
+.
+
+🌐 Isu Politik Internasional:
+4. Kesepakatan Jet Tempur KAAN dari Turkiye untuk Indonesia
+Presiden Turkiye, Erdogan, mengumumkan kesepakatan produksi bersama 48 unit jet tempur generasi-5 KAAN untuk Indonesia. Ini menandai langkah signifikan dalam kerja sama pertahanan dua negara 
+news.kompas.com
++15
+aa.com.tr
++15
+tvonenews.com
++15
+.
+
+🧭 Opini & Deklarasi:
+5. Prof. Suradika Kritik Politik Pasca-Reformasi
+Prof. Suradika menyebut jika pasca-era reformasi justru memunculkan kekuasaan tanpa etika dan pemimpin yang tidak amanah, menunjukkan dinamika politik yang semakin pragmatis 
+kbanews.com
+.</p>
+      </div>
+    </div>
+    <div class="article">
+      <img src="e.jpeg" alt="Berita Ekonomi">
+      <div class="article-content">
+        <h3>Ekonomi Global dan Dampaknya</h3>
+        <p>Berikut ini rangkuman dan analisis mendalam ekonomi dunia, kebijakan moneter, dan pasar global per 11 Juni 2025:
+
+🌍 Kondisi Ekonomi Global
+World Bank memangkas pertumbuhan global 2025 menjadi 2,3 % (dari perkiraan semula 2,7 %), akibat peningkatan tekanan tarif dan ketegangan perdagangan. Hanya di bawah 10 % kemungkinan resesi global, namun outlook dekade ini terendah sejak 1960-an: 2,5 % per tahun hingga 2027 
+reuters.com
+.
+
+OECD juga memangkas outlook GDP global 2025–2026 menjadi ~2,9 %, menyoroti dampak kebijakan proteksionis AS, inflasi tinggi, dan gangguan rantai pasok .
+
+OECD & OECD World Bank menunjukkan ekonomi berkembang cukup tahan, India & China tetap jadi motor utama.
+
+💱 Kebijakan Moneter & Bank Sentral
+Federal Reserve (AS): Suku bunga utama dipertahankan 4,25–4,50 % sejak Mei 2025. Pasar antisipasi dua pemangkasan pada Agustus & Desember 2025, tergantung data ekonomi .
+
+ECB (zona euro):
+
+Baru saja menurunkan suku sebesar 0,25 % karena inflasi sudah mendekati target 2 % dan tekanan global 
+businessinsider.com
++13
+ecb.europa.eu
++13
+theguardian.com
++13
+.
+
+Staf ECB prediksi GDP 2025 naik sekitar 0,9 %, inflasi core ~2,4 % .
+
+Euro-area bond market stabil, yield 10 tahun sudah konsisten setelah QE, dan preferensi global terhadap aset berdenominasi euro meningkat .
+
+Bank of England: Tingkat suku masih tinggi, dan gubernur Bailey menyoroti gangguan susunan sistem perdagangan global akibat tarif AS 
+theguardian.com
+.</p>
+      </div>
+    </div>
+    <div class="article">
+      <img src="p.jpg" alt="Berita Teknologi">
+      <div class="article-content">
+        <h3>Teknologi AI Mengubah Dunia</h3>
+        <p>Berikut analisis mendalam tentang bagaimana teknologi AI mengubah dunia dari berbagai sektor di 2025:
+
+1. 🚀 AI Generatif: Masa Depan Kreatif
+AI generatif—seperti ChatGPT‑5, DALL‑E, MidJourney—mampu menciptakan teks, gambar, musik, bahkan animasi secara otomatis. Ini telah mengubah industri:
+
+Memproduksi artikel, skrip, dan konten berkualitas tinggi lebih cepat dan murah 
+kumparan.com
++2
+medium.com
++2
+radarmukomuko.bacakoran.co
++2
+jakarta.telkomuniversity.ac.id
+.
+
+Dipakai dalam periklanan dan desain grafis untuk konten personalisasi; startup lokal melaporkan peningkatan engagement sebesar 40 % 
+beragaminfo.id
++1
+jakarta.telkomuniversity.ac.id
++1
+.
+
+Tantangan utama: risiko bias, etika, dan kontrol kualitas konten 
+radarmukomuko.bacakoran.co
++2
+kumparan.com
++2
+medium.com
++2
+.
+
+2. 🏥 Kesehatan Digital & Diagnostik Pintar
+AI belajar dalam mendiagnosis penyakit secara cepat dan akurat:
+
+Alat seperti AI‑powered MRI/CT scan membantu deteksi kanker sejak dini 
+kumaularista.com
++6
+jakarta.telkomuniversity.ac.id
++6
+kumparan.com
++6
+beragaminfo.id
+.
+
+Ada regulasi seperti TRIPOD+AI dan GDPR untuk menjamin privasi dan akurasi 
+en.wikipedia.org
+.
+
+Meski potensial besar, penerapannya masih sedikit di bawah pengawasan; butuh transparansi dan standar global 
+jakarta.telkomuniversity.ac.id
+.
+
+3. 🚗 Mobil dan Robot Otonom
+AI otonom tidak hanya di mobil, tapi juga robot industri:
+
+Mengemudi sendiri dengan sensor dan data real‑time meningkatkan keamanan & efisiensi 
+pe.feb.unesa.ac.id
++6
+medium.com
++6
+beragaminfo.id
++6
+.
+
+Di pabrik, robot AI kolaboratif meningkatkan presisi, hemat biaya, dan aman bekerja bersama manusia 
+jakarta.telkomuniversity.ac.id
+.
+
+4. 🏭 Automasi & Efisiensi Bisnis
+AI meningkatkan produktivitas dan inovasi:
+
+Chatbot 24/7, analitik big data, dan sistem cerdas telah merombak operasional perusahaan 
+en.wikipedia.org
++2
+medium.com
++2
+jakarta.telkomuniversity.ac.id
++2
+.
+
+Pelaku industri kini fokus ulang ke tugas kreatif dan strategis—manusia menjadi pengawas AI .
+
+5. 🛡️ Keamanan Siber dan Etika AI
+AI digunakan juga untuk menjaga privasi dan keamanan:
+
+Mendeteksi ancaman siber dan pola anomali secara real‑time 
+beragaminfo.id
++1
+radarmukomuko.bacakoran.co
++1
+.
+
+Namun deepfake dan penyalahgunaan AI bisa merusak kepercayaan. Whitepaper penting menggarisbawahi risiko ini 
+arxiv.org
+.
+
+Regulasi dan governance global penting untuk mengatur penggunaan superintelligent AI 
+kumparan.com
++7
+thetimes.co.uk
++7
+medium.com
++7
+.
+
+6. 🌍 Dampak Global & Infrastruktur Energi
+AI mengubah rantai nilai global, tetapi membawa konsekuensi:
+
+Efisiensi rantai pasok & produksi meningkat, namun kesenjangan teknologi antara negara maju dan berkembang juga melebar 
+jakarta.telkomuniversity.ac.id
++1
+ft.com
++1
+.
+
+Pusat data dan pelatihan AI memerlukan listrik besar—belum lagi jejak karbonnya. Solusi energi nuklir dan data center ramah lingkungan sedang dibahas .</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Rafa Braking News. Dibuat dengan rasa dan estetika.
+  </footer>
+
+</body>
+</html>
