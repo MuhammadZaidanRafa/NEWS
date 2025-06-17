@@ -14,7 +14,9 @@
       --text: #333;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -54,10 +56,12 @@
       transition: color 0.3s ease;
     }
 
-    nav a:hover { color: var(--accent); }
+    nav a:hover {
+      color: var(--accent);
+    }
 
     .hero {
-      background: url('https://via.placeholder.com/1200x400?text=Berita+Utama:+Tambang+Nikel+di+Raja+Ampat') no-repeat center/cover;
+      background: url('img/politik.jpg') no-repeat center/cover;
       color: white;
       text-align: center;
       padding: 100px 20px;
@@ -71,7 +75,10 @@
       top: 0; left: 0; right: 0; bottom: 0;
     }
 
-    .hero-content { position: relative; z-index: 1; }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
 
     .hero h2 {
       font-size: 40px;
@@ -79,7 +86,9 @@
       margin-bottom: 10px;
     }
 
-    .hero p { font-size: 18px; }
+    .hero p {
+      font-size: 18px;
+    }
 
     .articles {
       display: grid;
@@ -100,7 +109,9 @@
       flex-direction: column;
     }
 
-    .article:hover { transform: translateY(-5px); }
+    .article:hover {
+      transform: translateY(-5px);
+    }
 
     .article img {
       width: 100%;
@@ -127,6 +138,11 @@
       color: #888;
     }
 
+    .article-content ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
     .article-content p {
       font-size: 14px;
       color: #555;
@@ -141,9 +157,18 @@
     }
 
     @media (max-width: 600px) {
-      .hero h2 { font-size: 28px; }
-      nav { justify-content: center; }
-      header { flex-direction: column; align-items: flex-start; }
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
@@ -162,37 +187,49 @@
 
   <section class="hero">
     <div class="hero-content">
-      <h2>Berita Utama: Tambang Nikel di Raja Ampat Disetop</h2>
-      <p>Kerusakan lingkungan membuat izin tambang ditangguhkan pemerintah.</p>
+      <h2>Update Berita Terbaru Hari Ini</h2>
+      <p>Dapatkan informasi terpercaya, cepat, dan eksklusif hanya di RBN.</p>
     </div>
   </section>
 
   <section class="articles">
 
     <div class="article">
-      <img src="https://via.placeholder.com/800x600?text=Tambang+Nikel+Raja+Ampat" alt="Tambang Nikel Raja Ampat">
+      <img src="a.jpeg" alt="Berita Politik">
       <div class="article-content">
-        <h3>Izin Tambang Nikel di Raja Ampat Disetop Sementara</h3>
-        <small>16 Juni 2025 • Lingkungan</small>
-        <p>Kementerian LH menangguhkan empat izin tambang nikel karena kerusakan lingkungan di Pulau Gag dan Kawe. Langkah ini mendapat dukungan luas dari masyarakat adat dan aktivis lingkungan.</p>
+        <h3>Judul Berita Politik Hari Ini</h3>
+        <small>11 Juni 2025 • Politik</small>
+        <ul>
+          <li><strong>Prabowo Subianto:</strong> Belanda “Curi” Rp 504.000 Triliun selama penjajahan.</li>
+          <li><strong>Prabowo Tegaskan:</strong> Indonesia siap berperang jika kedaulatan terancam.</li>
+          <li><strong>DPR:</strong> Pertimbangkan Pansus Evaluasi Penyelenggaraan Haji 2025.</li>
+          <li><strong>Turkiye-Indonesia:</strong> Kesepakatan produksi bersama jet tempur KAAN.</li>
+          <li><strong>Prof. Suradika:</strong> Kritik keras terhadap etika politik pasca-reformasi.</li>
+        </ul>
       </div>
     </div>
 
     <div class="article">
-      <img src="https://via.placeholder.com/800x600?text=Airlangga+di+Brussel" alt="Airlangga di Brussel">
+      <img src="e.jpeg" alt="Berita Ekonomi">
       <div class="article-content">
-        <h3>RI–UE Kejar Finalisasi Perjanjian Dagang Akhir Juni</h3>
-        <small>6 Juni 2025 • Ekonomi</small>
-        <p>Indonesia dan Uni Eropa semakin dekat dengan kesepakatan perdagangan bebas (FTA). Menteri Airlangga melakukan kunjungan resmi ke Brussel untuk mempercepat finalisasi kesepakatan.</p>
+        <h3>Ekonomi Global dan Dampaknya</h3>
+        <small>11 Juni 2025 • Ekonomi</small>
+        <p>World Bank dan OECD memangkas proyeksi pertumbuhan global 2025 akibat inflasi dan proteksionisme. Kebijakan suku bunga di AS, Eropa, dan Inggris turut memengaruhi pasar. Sementara India dan China tetap menjadi motor ekonomi dunia.</p>
       </div>
     </div>
 
     <div class="article">
-      <img src="https://via.placeholder.com/800x600?text=Prabowo+Singapura" alt="Prabowo Singapura">
+      <img src="p.jpg" alt="Berita Teknologi">
       <div class="article-content">
-        <h3>Prabowo Tiba di Singapura, Bahas Kerja Sama ASEAN–GCC</h3>
-        <small>16 Juni 2025 • Internasional</small>
-        <p>Presiden Prabowo melakukan kunjungan kenegaraan ke Singapura dan bertemu PM Lawrence Wong. Mereka bahas kerja sama ekonomi dan strategi kawasan ASEAN–GCC.</p>
+        <h3>Teknologi AI Mengubah Dunia</h3>
+        <small>11 Juni 2025 • Teknologi</small>
+        <ul>
+          <li><strong>AI Generatif:</strong> Memproduksi konten otomatis, efisien, dan kreatif.</li>
+          <li><strong>Kesehatan:</strong> AI bantu diagnosa kanker lebih cepat dan akurat.</li>
+          <li><strong>Robot & Mobil Otonom:</strong> Meningkatkan efisiensi dan keselamatan.</li>
+          <li><strong>Keamanan Siber:</strong> AI mendeteksi ancaman & deepfake secara real-time.</li>
+          <li><strong>Energi & Infrastruktur:</strong> AI butuh energi besar, solusi ramah lingkungan dibahas.</li>
+        </ul>
       </div>
     </div>
 
